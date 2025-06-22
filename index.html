@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>MyCalc</title>
+</head>
+<body class="m-0 max-h-screen max-w-full flex flex-col items-center bg-[#333] text-gray-200 ">
+<div class="result-container text-end my-20 text-7xl w-[25rem] h-[8rem] p-[1rem] border-3 rounded-xl"><span id="result-text">0</span></div>
+<div class="flex flex-row gap-2 ">
+    <div class="col flex flex-col gap-2">
+        <button id="sqr" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out">x²</button>
+        <button id="sqrt" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out">√</button>
+        <button id="fact" class="text-3xl font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out">n!</button>
+        <button id="result" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl bg-gray-200 text-[#333] scale-110 ">=</button>
+    </div>
+    <div class="col flex flex-col gap-2">
+        <button id="btn7" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">7</button>
+        <button id="btn4" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">4</button>
+        <button id="btn1" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">1</button>
+        <button id="clear" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out">c</button>
+    </div>
+    <div class="col flex flex-col gap-2">
+        <button id="btn8" class="text-3xl uppercase font-bold border px-7 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">8</button>
+        <button id="btn5" class="text-3xl uppercase font-bold border px-7 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">5</button>
+        <button id="btn2" class="text-3xl uppercase font-bold border px-7 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">2</button>
+        <button id="btn0" class="text-3xl uppercase font-bold border px-7 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">0</button>
+    </div>
+    <div class="col flex flex-col gap-2">
+        <button id="btn9" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">9</button>
+        <button id="btn6" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">6</button>
+        <button id="btn3" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">3</button>
+        <button id="back" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out">←</button>
+    </div>
+    <div class="col flex flex-col gap-2">
+        <button id="divide" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">/</button>
+        <button id="multiply" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">*</button>
+        <button id="subtract" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">-</button>
+        <button id="add" class="text-3xl uppercase font-bold border px-6 py-6 rounded-2xl hover:bg-gray-200 hover:text-[#333] hover:scale-110 transition-all duration-300 ease-in-out num">+</button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
